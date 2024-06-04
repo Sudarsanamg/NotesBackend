@@ -1,0 +1,3 @@
+VoEzVGL2SMBP63wv 
+
+mongodb+srv://sudarsanamg762004:VoEzVGL2SMBP63wv@cluster0.eioeiyo.mongodb.net/MERNnotes?retryWrites=true&w=majority&appName=Cluster0
