@@ -2,6 +2,8 @@
 const app = express()
 const cors=require('cors')
 require('dotenv').config()
+const http = require('http');
+const socketIo = require('socket.io');
 const port = 3000
 const mongoose=require('mongoose')
 const jwt=require('jsonwebtoken');
@@ -13,9 +15,10 @@ const Note=require('./models/note.model')
 //  ! backend completed
 
 app.use(express.json())
-app.use(cors({
-    origin :'*'
-}));
+app.use(cors());
+
+
+
 
 app.get('/',(req,res)=>{
     res.json({message:'Hello'})
@@ -234,6 +237,7 @@ try {
 } catch (error) {
     return res.status(500).json({error})
 }})
+
 
 
 

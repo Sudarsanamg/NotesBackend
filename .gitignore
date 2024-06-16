@@ -1,1 +1,4 @@
 .vercel
+*.txt
+utils.js
+*.env
